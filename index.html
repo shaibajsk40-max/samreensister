@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#191419">
+    <title>Samreen Edit | Creative Video Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated rain background -->
+    <canvas id="rainCanvas"></canvas>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Samreen<span>Edit.</span></a>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero section" id="home">
+        <div class="hero-content reveal">
+            <p class="eyebrow">✦ YOUR CREATIVE VIDEO STUDIO</p>
+
+            <h1>
+                Every Frame<br>
+                Tells a
+                <span class="animated-text" id="changingText">
+                    Story.
+                </span>
+            </h1>
+
+            <p class="hero-description">
+                Assalamualaikum! Welcome to Samreen Edit.
+                Professional video editing, beautiful text animations
+                and beginner-friendly video editing lessons.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn primary-btn whatsapp"
+                   data-message="Assalamualaikum Samreen sis, mujhe video editing ke baare mein details chahiye.">
+                    Discuss Your Project ↗
+                </a>
+
+                <a href="#portfolio" class="btn secondary-btn">
+                    Explore Portfolio ↓
+                </a>
+            </div>
+
+            <div class="hero-note">
+                <span class="status-dot"></span>
+                Creative Editing · Personal Attention
+            </div>
+        </div>
+
+        <div class="hero-visual reveal">
+            <div class="portrait-frame">
+                <!-- Add Samreen's photo as samreen.jpg -->
+                <img src="samreen.jpg"
+                     alt="Samreen"
+                     onerror="this.style.display='none'">
+
+                <div class="portrait-placeholder">
+                    <span>🎬</span>
+                    <h3>Samreen Edit</h3>
+                    <p>Your creative editing partner</p>
+                </div>
+            </div>
+
+            <div class="floating-card card-top">
+                <span>✨</span>
+                <div>
+                    <strong>Reels & Shorts</strong>
+                    <small>Vertical video editing</small>
+                </div>
+            </div>
+
+            <div class="floating-card card-bottom">
+                <span>🎓</span>
+                <div>
+                    <strong>Learn Editing</strong>
+                    <small>Beginner-friendly lessons</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+        <div class="section-heading reveal">
+            <p class="eyebrow">WHAT I OFFER</p>
+            <h2>Creative Services</h2>
+            <p>Choose the service that matches your needs.</p>
+        </div>
+
+        <div class="service-grid">
+            <article class="glass-card service-card reveal">
+                <div class="service-icon">📱</div>
+                <h3>Short Video Editing</h3>
+                <p>
+                    Reels and shorts with engaging text animation,
+                    transitions and creative effects.
+                </p>
+                <div class="price">₹200 <small>/ video</small></div>
+                <a href="#" class="btn secondary-btn whatsapp"
+                   data-message="Assalamualaikum Samreen sis, mujhe short video editing karwani hai. Please charges aur details bata dijiye.">
+                    Book a Video ↗
+                </a>
+            </article>
+
+            <article class="glass-card service-card reveal">
+                <div class="service-icon">🎓</div>
+                <h3>Learn Video Editing</h3>
+                <p>
+                    Learn editing step by step, including tools,
+                    transitions, text effects and exporting.
+                </p>
+                <div class="price">₹599 <small>/ course</small></div>
+                <a href="#" class="btn secondary-btn whatsapp"
+                   data-message="Assalamualaikum Samreen sis, mujhe ₹599 mein video editing seekhni hai. Course ki details aur timing bata dijiye.">
+                    Start Learning ↗
+                </a>
+            </article>
+
+            <article class="glass-card service-card reveal">
+                <div class="service-icon">🖥️</div>
+                <h3>Long Video Editing</h3>
+                <p>
+                    Custom editing for educational videos,
+                    informative content and other suitable projects.
+                </p>
+                <div class="price">Custom <small>/ project</small></div>
+                <a href="#" class="btn secondary-btn whatsapp"
+                   data-message="Assalamualaikum Samreen sis, mujhe long video edit karwani hai. Duration ke hisaab se charges bata dijiye.">
+                    Get a Quote ↗
+                </a>
+            </article>
+        </div>
+
+        <p class="small-note">
+            *Prices are starting prices. Please confirm the final charges
+            and included services before booking.
+        </p>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section" id="portfolio">
+        <div class="section-heading reveal">
+            <p class="eyebrow">MY CREATIVE WORK</p>
+            <h2>Video Portfolio</h2>
+            <p>Showcase your editing work in vertical and landscape formats.</p>
+        </div>
+
+        <div class="portfolio-filters reveal">
+            <button class="filter-btn active" data-filter="all">All Videos</button>
+            <button class="filter-btn" data-filter="reel">Reels 9:16</button>
+            <button class="filter-btn" data-filter="wide">Videos 16:9</button>
+        </div>
+
+        <div class="portfolio-grid">
+
+            <!-- Add your own video files with these names -->
+            <article class="video-card glass-card reveal" data-type="reel">
+                <video controls playsinline preload="metadata">
+                    <source src="edit-1.mp4" type="video/mp4">
+                </video>
+                <h3>Reel Editing 01</h3>
+                <p>Vertical video · 9:16</p>
+            </article>
+
+            <article class="video-card glass-card reveal" data-type="reel">
+                <video controls playsinline preload="metadata">
+                    <source src="edit-2.mp4" type="video/mp4">
+                </video>
+                <h3>Reel Editing 02</h3>
+                <p>Vertical video · 9:16</p>
+            </article>
+
+            <article class="video-card glass-card reveal" data-type="reel">
+                <video controls playsinline preload="metadata">
+                    <source src="edit-3.mp4" type="video/mp4">
+                </video>
+                <h3>Reel Editing 03</h3>
+                <p>Vertical video · 9:16</p>
+            </article>
+
+            <article class="video-card glass-card reveal" data-type="reel">
+                <video controls playsinline preload="metadata">
+                    <source src="reel4.mp4" type="video/mp4">
+                </video>
+                <h3>Reel Editing 04</h3>
+                <p>Vertical video · 9:16</p>
+            </article>
+
+            <article class="video-card glass-card reveal" data-type="reel">
+                <video controls playsinline preload="metadata">
+                    <source src="reel5.mp4" type="video/mp4">
+                </video>
+                <h3>Reel Editing 05</h3>
+                <p>Vertical video · 9:16</p>
+            </article>
+
+            <article class="video-card glass-card reveal" data-type="reel">
+                <video controls playsinline preload="metadata">
+                    <source src="reel6.mp4" type="video/mp4">
+                </video>
+                <h3>Reel Editing 06</h3>
+                <p>Vertical video · 9:16</p>
+            </article>
+
+            <article class="video-card glass-card reveal" data-type="reel">
+                <video controls playsinline preload="metadata">
+                    <source src="reel7.mp4" type="video/mp4">
+                </video>
+                <h3>Reel Editing 07</h3>
+                <p>Vertical video · 9:16</p>
+            </article>
+
+            <article class="video-card glass-card reveal" data-type="wide">
+                <video controls playsinline preload="metadata">
+                    <source src="wide1.mp4" type="video/mp4">
+                </video>
+                <h3>Landscape Project 01</h3>
+                <p>Wide video · 16:9</p>
+            </article>
+
+            <article class="video-card glass-card reveal" data-type="wide">
+                <video controls playsinline preload="metadata">
+                    <source src="wide2.mp4" type="video/mp4">
+                </video>
+                <h3>Landscape Project 02</h3>
+                <p>Wide video · 16:9</p>
+            </article>
+
+        </div>
+
+        <div class="instagram-box glass-card reveal">
+            <div>
+                <p class="eyebrow">FOLLOW MY WORK</p>
+                <h3>More edits on Instagram</h3>
+                <p>Visit the Instagram profile for more creative content.</p>
+            </div>
+            <a href="https://instagram.com/editora_flux"
+               target="_blank" rel="noopener noreferrer"
+               class="btn primary-btn">
+                @editora_flux ↗
+            </a>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+        <div class="section-heading reveal">
+            <p class="eyebrow">SIMPLE PRICING</p>
+            <h2>Choose Your Plan</h2>
+            <p>Message Samreen to confirm availability and final pricing.</p>
+        </div>
+
+        <div class="pricing-grid">
+            <article class="glass-card pricing-card reveal">
+                <p class="plan-label">FOR CREATORS</p>
+                <h3>Short Video</h3>
+                <div class="price">₹200 <small>/ video</small></div>
+                <ul>
+                    <li>One short video edit</li>
+                    <li>Agreed text and transitions</li>
+                    <li>Suitable social media format</li>
+                </ul>
+                <a href="#" class="btn secondary-btn whatsapp"
+                   data-message="Assalamualaikum Samreen sis, mujhe ₹200 wali short video editing karwani hai. Details bata dijiye.">
+                    Enquire Now ↗
+                </a>
+            </article>
+
+            <article class="glass-card pricing-card featured reveal">
+                <p class="plan-label">FOR LEARNERS</p>
+                <h3>Editing Lessons</h3>
+                <div class="price">₹599 <small>/ course</small></div>
+                <ul>
+                    <li>Beginner-friendly learning</li>
+                    <li>Editing tools and workflow</li>
+                    <li>Course details via WhatsApp</li>
+                </ul>
+                <a href="#" class="btn primary-btn whatsapp"
+                   data-message="Assalamualaikum Samreen sis, mujhe ₹599 mein video editing seekhni hai. Course outline aur timing bata dijiye.">
+                    Learn With Me ↗
+                </a>
+            </article>
+
+            <article class="glass-card pricing-card reveal">
+                <p class="plan-label">CUSTOM PROJECTS</p>
+                <h3>Long Video</h3>
+                <div class="price">Custom</div>
+                <ul>
+                    <li>Quote based on duration</li>
+                    <li>Style discussed beforehand</li>
+                    <li>Delivery timeline confirmed</li>
+                </ul>
+                <a href="#" class="btn secondary-btn whatsapp"
+                   data-message="Assalamualaikum Samreen sis, mujhe long video editing ka quote chahiye. Please details bata dijiye.">
+                    Get a Quote ↗
+                </a>
+            </article>
+        </div>
+
+        <div class="important-notice reveal">
+            <span>⚠️</span>
+            <p>
+                <strong>Important Notice:</strong>
+                Songs wali reels/videos nahi banayi jayengi.
+                Please project details aur final charges pehle confirm karein.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="contact-panel glass-card reveal">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Have a project<br><span class="animated-text">in mind?</span></h2>
+            <p>
+                Video editing karwani ho ya editing seekhni ho,
+                apni requirements WhatsApp par share karein.
+            </p>
+
+            <a href="#" class="btn primary-btn whatsapp"
+               data-message="Assalamualaikum Samreen sis, mujhe aapki video editing services ke baare mein details chahiye.">
+                Message on WhatsApp ↗
+            </a>
+
+            <p class="contact-number">WhatsApp: +91 70281 85852</p>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#home" class="logo">Samreen<span>Edit.</span></a>
+        <p>Creative editing with care. © <span id="year"></span> Samreen Edit</p>
+        <a href="https://instagram.com/editora_flux"
+           target="_blank" rel="noopener noreferrer">@editora_flux</a>
+    </footer>
+
+    <button id="backTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
